@@ -14,15 +14,8 @@
             typedArray.recycle()
     
             // Attach an instance of ImageDisplayFragment using factory method
-    
-            val ccf_image = intArrayOf(
-                R.drawable.ccf_saltedcaramel,
-                R.drawable.ccf_godiva,
-                R.drawable.ccf_coconutcreampie,
-                R.drawable.ccf_lowlicious
-            )
 
-            val fragment = ImageDisplayFragment.newInstance(ccf_image)
+            val fragment = ImageDisplayFragment.newInstance(imageArray)
     
             supportFragmentManager
                 .beginTransaction()
